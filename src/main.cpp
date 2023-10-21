@@ -4,7 +4,7 @@ int numeros[3][3];
 
 void setup() {
 
-  Serial.begin(9600); // Inicia la comunicación serial a 115200 baudios
+  Serial.begin(9600);
   
 }
 
@@ -18,9 +18,9 @@ void loop() {
       Serial.print("]: ");
       Serial.println("");
       while (!Serial.available()) {
-        // Espera a que se ingrese un número por el monitor serial
+        
       }
-      numeros[i][j] = Serial.parseInt(); // Lee el número ingresado
+      numeros[i][j] = Serial.parseInt(); 
     }
   }
 
